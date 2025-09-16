@@ -5,11 +5,6 @@ Este projeto tem como objetivo treinar **HTML, CSS e JavaScript** enquanto desen
 
 ---
 
-## 📂 Estrutura do Projeto# Portal-do-Pet-2
-
-portal-do-pet/ │── index.html          # Página inicial │── /css                # Estilos do site │   └── style.css │── /js                 # Scripts de interatividade │   └── main.js │── /img                # Logos, fundos e imagens dos pets │── README.md           # Documentação do projeto
-
----
 
 ## ✨ Funcionalidades
 
