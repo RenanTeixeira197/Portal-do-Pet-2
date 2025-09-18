@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens-site/logo.png" type="image/x-icon">
+    <title>Doação/Adoção</title>
+    <link rel="stylesheet" href="../estilos/doacao.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portal do Pet</div>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <ul class="menu" id="menu">
+                <li><a href="home.html">Início</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="doa_adoc.html">Doação/Adoção</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Doação/Adoção de pets</h1>
+
+    <div id="quadrado">
+        <form action="../cadastro.php">
+
+            <p>
+                <label for="nomeD">Nome:</label>
+                <input type="text" id="nomeD" name="nome" required>
+            </p>
+
+            <p>
+                <label for="icpf">CPF:</label>
+                <input type="text" id="icpf" name="cpf" required>
+            </p>
+
+            <p>
+                <label for="inasc">Data de Nascimento:</label>
+                <input type="date" id="inasc" name="dataNasc" min="1900-01-01" required>
+            </p>
+
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" id="itel" name="telefone" required>
+            </p>
+
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" id="iemail" name="email" required>
+            </p>
+
+            <p>
+                <label for="iend">Endereço:</label>
+                <input type="text" id="iend" name="endereco" required>
+            </p>
+
+            <p>
+                <label for="idade">Idade do Pet (Meses):</label>
+                <input type="number" id="idade" name="idadePet" min="0" required>
+            </p>
+
+            <p>
+                <label for="itipo">Tipo de pet:</label>
+                <select id="itipo" name="tipoPet">
+                    <option value="cao">Cão</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="iraca">Raça:</label>
+                <input type="text" id="iraca" name="raca">
+            </p>
+
+            <p>
+                <label for="igen">Gênero:</label>
+                <select id="igen" name="genero">
+                    <option value="macho">Macho</option>
+                    <option value="femea">Fêmea</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Vacinas:</label>
+                <input type="checkbox" name="vacinas[]" value="v8"> v8
+                <input type="checkbox" name="vacinas[]" value="v10"> v10
+                <input type="checkbox" name="vacinas[]" value="antirrabica"> Antirrábica
+                <input type="checkbox" name="vacinas[]" value="outro"> Outro:
+                <input type="text" name="outraVacina">
+            </p>
+
+            <p>
+                <label>Castrado:</label>
+                <input type="radio" id="castradoSim" name="castrado" value="sim"> Sim
+                <input type="radio" id="castradoNao" name="castrado" value="nao"> Não
+            </p>
+
+            <p>
+                <label for="tipoAcao">Ação:</label>
+                <select id="tipoAcao" name="acao">
+                    <option value="adotar">Adotar</option>
+                    <option value="doar">Doar</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="obs">Observações:</label>
+                <textarea id="obs" name="observacoes" rows="4" cols="50"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
