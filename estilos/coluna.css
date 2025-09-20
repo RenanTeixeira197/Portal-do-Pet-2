@@ -11,6 +11,7 @@ html, body{
 body{
     background-image: url('../imagens-site/fundo01.png');
     background-attachment: fixed;
+    margin: 0px;
 }
 
 /* Header */

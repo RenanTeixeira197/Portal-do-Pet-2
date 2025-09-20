@@ -9,19 +9,20 @@ html, body{
 }
 
 body{
-  background-image: url('../imagens-site/logo.png');
+  background-image: url('../imagens-site/fundo01.png');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  position: relative;
-  background-color: #0056b3;
+  margin: 0px;
 }
+
 
 /* Header */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   background-color: #007BFF; /* azul do site */
   padding: 10px 20px;
   color: white;
@@ -77,7 +78,7 @@ body{
     margin: 40px auto;
     padding: 20px;
     background: #fff;
-    opacity: 80%;
+    opacity: 88%;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     font-family: Arial, sans-serif;
@@ -98,7 +99,7 @@ h1{
 #quadrado label {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #444;
+    color: #0900b9;
 }
 
 #quadrado input[type="text"],
@@ -109,7 +110,7 @@ h1{
 #quadrado select,
 #quadrado textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #091e97;
     border-radius: 8px;
     outline: none;
     font-size: 14px;
