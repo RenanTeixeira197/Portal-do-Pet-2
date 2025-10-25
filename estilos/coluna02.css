@@ -9,11 +9,9 @@ html, body{
 }
 
 body{
-  background-image: url('../imagens-site/fundo01.png');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
+    background-image: url('../imagens-site/fundo01.png');
+    background-attachment: fixed;
+    margin: 0px;
 }
 
 /* Header */
@@ -78,79 +76,13 @@ main{
   margin-top: 2px;
   margin-bottom: 2px;
   padding: 15px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: justify;
 }
 
-main p, h1{
-  text-align: center;
-  align-items: center;
-  background-color: #007BFF; /* azul do site */
-  color: white;
-}
-
-.imagem {
-  background-image: url(../coluna02img/hond-duitse-herder-huisdier.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  max-width: 988px;
-  min-height: 409px; /* Altura mínima proporcional */
-  text-align: center;
-  margin: 0 auto 16px auto;
-  position: relative;
-  overflow: hidden; /* evita que o quadrado ultrapasse a borda */
-}
-
-section.imagem {
-  background-image: url(../coluna02img/border-collie-768x509-2.webp);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  max-width: 988px;
-  aspect-ratio: 16 / 9; /* mantém proporção bonita em qualquer tela */
-  text-align: center;
-  margin: 0 auto 16px auto;
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-/* Mantém o quadrado de texto fixo no rodapé da imagem */
-div.quadrado {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: rgb(102, 193, 229);
-  padding: 10px 6px 10px;
+section{
   text-align: center;
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-  section.imagem {
-    aspect-ratio: 4 / 3; /* um pouco mais “alta” em tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  section.imagem {
-    aspect-ratio: 1 / 1; /* quadrada em celulares, preenche melhor a tela */
-  }
-  div.quadrado {
-    font-size: 14px;
-    padding: 8px;
-  }
-}
-
-
-
-
-
 
 
 /* Rodapé*/
@@ -162,25 +94,4 @@ footer{
   background-color: #007BFF; /* azul do site */
   padding: 5px 20px;
   color: white;
-}
-
-/* Media queries adicionais para responsividade */
-@media (max-width: 992px) {
-  main{ margin: 24px; }
-  section.imagem{ max-width: 560px; }
-}
-
-@media (max-width: 768px) {
-  /* menu responsivo (botão já controlado via JS) */
-  .menu{ gap: 12px; }
-  main{ margin: 12px; padding: 12px; }
-  section.imagem{ max-width: 100%; aspect-ratio: 4/3; height: 200px; }
-  div.quadrado{ padding: 10px; font-size: 14px; }
-  footer{ flex-direction: column; gap: 8px; text-align: center; }
-}
-
-@media (max-width: 480px) {
-  .menu{ gap: 8px; }
-  section.imagem{ height: 160px; }
-  main{ padding: 10px; }
 }
